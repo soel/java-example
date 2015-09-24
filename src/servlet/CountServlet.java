@@ -21,18 +21,7 @@ public class CountServlet extends HttpServlet {
 	/**
 	 * @see Servlet#init(ServletConfig)
 	 */
-	public void init(ServletConfig config) throws ServletException {
-		
-		super.init(config);
-		
-		// 訪問回数を表す Integer インスタンスを新規作成し
-		// アプリケーションスコープに保存
-		Integer count = 0;
-		ServletContext application = config.getServletContext();
-		application.setAttribute("count", count);
-		
-		System.out.println("init()が実行されました");
-	}
+
 
 	/**
 	 * @see Servlet#destroy()
